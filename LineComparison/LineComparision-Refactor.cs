@@ -33,15 +33,19 @@ namespace LineComparison
             
 
             Second_line_Length  = Math.Sqrt(Math.Pow((xFour - xThree), 2) + Math.Pow((yFour - yThree), 2));
-            Console.WriteLine("Length of the line ONE is : " +  Second_line_Length);
+            Console.WriteLine("Length of the line Two is : " +  Second_line_Length);
 
             if (line_Length == Second_line_Length)
             {
                 Console.WriteLine("Two lines are equal");
             }
+            else if (line_Length.CompareTo(Second_line_Length) < 0)
+            {
+                Console.WriteLine("line_One is less than Line_Two");
+            }
             else
             {
-                Console.WriteLine("Two lines are not equal");
+                Console.WriteLine("Line_One is Greater Than Line_Two");
             }
 
         }
